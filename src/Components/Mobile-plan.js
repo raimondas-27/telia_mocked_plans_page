@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import * as data from "../Data/plan1.json";
+import * as data from "../../public/data/data.json";
+import axios from "axios";
 
 class MobilePlan extends Component {
    state = {}
@@ -22,6 +23,7 @@ class MobilePlan extends Component {
                       <p className={"gigabytes-section__description-callsMessages"}> {data.minSms} </p>
                    </div>
                 </div>
+                <div className="hr"></div>
                 <div className={"advantages-section"}>
                    <div className={"advantages-section__services"}>
                       {data.features.map((oneFeature) => (
@@ -31,6 +33,7 @@ class MobilePlan extends Component {
                          ))}
                    </div>
                 </div>
+                <div className="hr"></div>
                 <div className={"price-section"}>
                    <div className={"price-section__aligned"}>
                       <div className={"price-section__description"}>

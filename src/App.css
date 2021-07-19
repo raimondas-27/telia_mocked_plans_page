@@ -4,9 +4,20 @@
     box-sizing: border-box;
 }
 
+.d-flex {
+    display: flex;
+    gap: 0.5rem;
+}
+
 .App {
     font-family: 'Roboto', sans-serif;
     background-color: #f2f2f2;
+}
+
+.hr {
+    height: 1px;
+    background-color: #f2f2f2;
+    margin: 0.5rem -1rem;
 }
 
 /* container */
@@ -16,6 +27,7 @@
     border: 1px solid #e6e5e5;
     border-radius: 10px;
     max-width: 280px;
+    margin-top: 15px;
 }
 
 /* payment card */
@@ -64,9 +76,15 @@
     padding: 20px 0;
 }
 
-.advantages-section__services > i {
+.advantages-section__services i {
     color: yellowgreen;
 }
+
+.advantages-section__services span {
+    color: black;
+    margin-left: 15px;
+}
+
 
 .advantages-section__services > span {
     color: black;
@@ -97,3 +115,29 @@
     color: #fff;
     font-weight: bold;
 }
+
+/* commitment */
+
+.commitment-component {
+    display: flex;
+    gap: 2px;
+    width: 50%;
+}
+
+.c__selection {
+    background-color: rgba(34, 34, 34, 0.04);
+    flex-basis: 50%;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.radio svg {
+    margin-right: 0.7rem;
+}
+
