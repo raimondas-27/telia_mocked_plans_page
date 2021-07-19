@@ -1,11 +1,23 @@
+import React, {Component} from 'react';
 import './App.css';
+import Commitment from "./Components/Commitment";
+import HaveServices from "./Components/HaveServices";
+import MobilePlan from "./Components/Mobile-plan";
 
-function App() {
-  return (
-    <div className="App">
-      <h2> here i am</h2>
-    </div>
-  );
+
+
+class App extends Component {
+   state = {}
+
+   render() {
+      return (
+          <div className="App">
+             <Commitment/>
+             <HaveServices/>
+             <MobilePlan/>
+          </div>
+      );
+   }
 }
 
 export default App;
