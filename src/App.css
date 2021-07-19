@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.App {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* container */
+
+.cart-container {
+    background-color: white;
+    border: 1px solid #e6e5e5;
+    border-radius: 10px;
+    max-width: 280px;
+}
+
+/* payment card */
+
+.payment-card {
+    margin: 20px;
+}
+
+/* gigabytes section */
+
+.gigabytes-section {
+    padding: 10px 0;
+
+}
+
+.gigabytes-section__name {
+    font-size: 11px;
+    opacity: 0.6;
+    padding-bottom: 15px;
+}
+
+.gigabytes-section_data-old {
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+
+.gigabytes-section_data-new {
+    font-size: 25px;
+    font-weight: 100;
+    color: #c21d86;
+}
+
+.gigabytes-section__description-countries {
+    font-size: 11px;
+}
+
+.gigabytes-section__description-callsMessages {
+    font-size: 12px;
+}
+
+/* advantages section */
+
+.advantages-section__services {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.advantages-section__services > i {
+    color: yellowgreen;
+}
+
+.advantages-section__services > span {
+    color: black;
+}
+
+/* price section */
+
+.price-section__aligned {
+    display: flex;
+    align-items: center;
+}
+
+.price-section__description {
+    width: 50%;
+}
+
+.price-section__description span {
+    font-weight: normal;
+    font-size: 0.6rem;
+}
+
+.price-section__button {
+    width: 50%;
+    background-color: #990ae3;
+    border: none;
+    padding: 0.6rem 1.4rem;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+}
