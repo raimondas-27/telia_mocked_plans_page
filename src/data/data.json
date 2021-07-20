@@ -12,10 +12,13 @@
         }
     ],
     "price": {
-        "commitment": 9,
+        "comitment": 9,
         "noComitment": 9.9
     },
     "period": "men",
-    "contractLengh": 24,
+    "contractLength": {
+        "noCommitment" : "be isipareigojimu",
+        "commitment" : "24 men sutartis"
+    },
     "ctaButton": "Domina"
 }

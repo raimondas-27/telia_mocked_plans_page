@@ -1,9 +1,15 @@
 import React, {Component} from 'react';
-import * as data from "../../public/data/data.json";
+import * as data from "../data/data.json";
 import axios from "axios";
 
 class MobilePlan extends Component {
    state = {}
+
+   formatPrice = (number) => {
+      return number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+   }
+
+
 
    render() {
 
@@ -37,8 +43,11 @@ class MobilePlan extends Component {
                 <div className={"price-section"}>
                    <div className={"price-section__aligned"}>
                       <div className={"price-section__description"}>
-                         <p className={"price-section__price"}> {data.price.commitment} <span>&euro;/men</span></p>
-                         <p className={"price-section__length"}> {data.contractLengh} {data.period} sutartis </p>
+                         {!this.props.noCommitment ? this.formatPrice(data.price.comitment) : this.formatPrice(data.price.noComitment)}
+                         <span>&euro;/{data.period}</span>
+                         {/*<p className={"price-section__price"}> {data.price.commitment} <span>&euro;/{data.period}</span></p>*/}
+                         <p className={"price-section__length"}> {data.contractLength.commitment} </p>
+
                       </div>
                       <button className={"price-section__button"}> {data.ctaButton}</button>
                    </div>

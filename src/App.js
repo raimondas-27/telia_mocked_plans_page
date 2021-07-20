@@ -17,18 +17,6 @@ class App extends Component {
       }
    }
 
-   async componentDidMount() {
-    // const res = await fetch('/Users/raimondaskurklenas/Desktop/telia_mocked_plans_page/src/folder_with_json/data.json');
-    // const folder_with_json = await res.json();
-    // console.log(folder_with_json);
-
-    const {
-      data: { features },
-    } = await axios.get('data/data.json');
-    console.log(features);
-  }
-
-
 
    handleRadio = (val) => {
       if (val === "commit") {
@@ -49,7 +37,7 @@ class App extends Component {
                 <HaveServices/>
              </div>
              <main className="plan-cards">
-                <MobilePlan/>
+                <MobilePlan noCommitment={this.state.noCommitment}/>
              </main>
           </div>
       );
